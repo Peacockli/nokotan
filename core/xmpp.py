@@ -41,6 +41,7 @@ class Bot(slixmpp.ClientXMPP):
         self.store_oob_links = config.get("store_oob_links", False)
         self.store_oob_files = config.get("store_oob_files", False)
         self.store_oob_exts = config.get("store_oob_exts", [])
+        self.source_url = config.get("source_url", "https://github.com/Peacockli/nokotan")
 
         self.sql = SQLHandler(config.get("sql_file", "bot.db"))
         self.command_handler = CommandHandler(self)

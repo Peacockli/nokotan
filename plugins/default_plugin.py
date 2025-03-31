@@ -12,6 +12,7 @@ class DefaultPlugin(BasePlugin):
     def register_commands(self):
         """Register commands with the bot"""
         self.bot.register_command('help', self.plugin_name, self.help_command, aliases=['h'])
+        self.bot.register_command('source', self.plugin_name, self.source_command)
         self.bot.register_command('join', self.plugin_name, self.join_command, admin=True, category='admin')
         self.bot.register_command('ignore', self.plugin_name, self.ignore_command, admin=True, category='admin')
         self.bot.register_command('shutdown', self.plugin_name, self.shutdown_command, admin=True, category='admin')
@@ -76,6 +77,10 @@ class DefaultPlugin(BasePlugin):
         lines = text.splitlines()
         stripped_lines = [re.sub(r"^\s+", "", line) for line in lines]
         return "\n".join(stripped_lines)
+
+    async def source_command(self, params):
+        mbody = f"Source available here: {self.bot.source_url}"
+        await self.bot.send_message_processed(mbody, msg=params['msg'])
 
     async def join_command(self, params):
         """Have the bot join a muc.
