@@ -1,0 +1,34 @@
+[
+  {
+    "url": "https://soylentnews.org/index.rss",
+    "mucs": [],
+    "filter": [
+      {
+        "field": "tags[0].term",
+        "in_list": [
+          "os",
+          "science",
+          "security",
+          "hardware",
+          "software",
+          "news",
+          "breakingnews",
+          "random",
+          "business",
+          "liberty"
+        ]
+      }
+    ]
+  },
+  {
+    "url": "https://seclists.org/rss/oss-sec.rss",
+    "mucs": [],
+    "filter": [
+      {
+        "field": "title",
+        "starts_with": "Re:",
+        "exclude": true
+      }
+    ]
+  }
+]

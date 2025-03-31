@@ -1,0 +1,15 @@
+{
+    "messages": [
+      {
+        "role": "system",
+        "file": "system"
+      },
+      {
+        "role": "user",
+        "file": "input",
+        "input_replacements": {
+          "text": "{text}"
+        }
+      }
+    ]
+  }

@@ -1,0 +1,109 @@
+{
+    "bot_jid": "bot@jid.here",
+    "bot_pw": "password",
+    "bot_nick": "Nokotan",
+    "sql_file": "bot.db",
+    "store_oob_links": false,
+    "store_oob_files": false,
+    "store_oob_exts": [ "*" ],
+    "admins": [
+        "admin@jids.here"
+    ],
+    "ignored": [
+        "ignored nicks here"
+    ],
+    "llm": {
+        "enabled": true,
+        "temperature": 1.2,
+        "num_predict": 256,
+        "filter_all_msgs": false,
+        "filter_prompt": "example_filter"
+    },
+    "ollama": {
+        "host": "http://127.0.0.1:11434",
+        "model": "qwen2.5:3b-instruct-q5_1"
+    },
+    "openai": {
+        "api_key": "",
+        "host": "https://openrouter.ai/api/v1",
+        "model": "deepseek/deepseek-chat"
+    },
+    "default_command_cooldown": 2,
+    "default_command_prefix": ".",
+    "show_command_suggestion": true,
+    "run_command_suggestion": false,
+    "max_history": 100,
+    "global_disabled_plugins": [
+        "debug_plugin"
+    ],
+    "mucs": {
+        "muc@jid.here.uwu": {
+            "auto_rejoin": true,
+            "allow_mentions": false,
+            "silent_mode": false,
+            "command_prefix": ".",
+            "nick": "Deer",
+            "disabled_commands": [],
+            "disabled_plugins": [],
+            "llm_filter_all_msgs": false,
+            "llm_filter_prompt": "example_filter"
+        }
+    },
+    "plugin_config": {
+        "default_plugin": {
+            "whisper_help": false
+        },
+        "chat_plugin": {
+            "num_history_msgs": 5,
+            "chat_prompt": "example_chat",
+            "styles": [
+                "AAVE",
+                "Lovecraftian",
+                "Valley Girl",
+                "Shakespearean",
+                "Military Formal",
+                "Yoda",
+                "Noir Detective",
+                "Surfer Dude",
+                "Corporate Jargon",
+                "Hype Beast",
+                "1950s Greaser",
+                "Fantasy Tavern Bard",
+                "Texting Teen"
+            ],
+            "moods": [
+                "Overly Happy",
+                "Rude",
+                "Sarcastic",
+                "Melodramatic",
+                "Bored",
+                "Nervous",
+                "Spooky",
+                "Flirty",
+                "Drunk",
+                "Philosophical",
+                "Paranoid",
+                "Overly Polite",
+                "Hyper",
+                "Sleepy",
+                "Tsundere",
+                "Yelling (ALL CAPS)",
+                "Dead Inside"
+            ]
+        },
+        "post_office": {
+            "cooldown": 60,
+            "filter": "example_filter"
+        },
+        "feeds": {
+            "frequency": 120,
+            "summarize_prompt": "example_feed"
+        }
+    },
+    "logging": {
+            "enabled": true,
+            "level": "INFO",
+            "log_to_file": false,
+            "log_file_path": "bot.log"
+    }
+}

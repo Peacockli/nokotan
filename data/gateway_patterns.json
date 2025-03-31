@@ -1,0 +1,8 @@
+{
+  "discord_xmpp_bot": {
+    "pattern": "<nick> body",
+    "replace": {
+      ":": "\\:"
+    }
+  }
+}

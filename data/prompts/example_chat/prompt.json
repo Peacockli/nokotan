@@ -1,0 +1,18 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "file": "system"
+    },
+    {
+      "role": "user",
+      "file": "input",
+      "input_replacements": {
+        "history": "{history}",
+        "bot_nick": "{bot_nick}",
+        "style": "{style}",
+        "mood": "{mood}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+Summarize the provided article text in a concise, raw text format, extracting only the core content while ignoring HTML tags, ads, or irrelevant metadata. The summary should be neutral, factual, and based solely on the article's key points—do not add commentary, analysis, or external information. Keep it brief (1-3 sentences).
+
+Include the placeholder `{url}` in the summary, integrating it naturally (e.g., "According to {url},..."). Do not use prefixes like "Summary:" or "Article:".
+
+Example output:
+*A new study suggests coffee may improve longevity. Read more at {url}.*

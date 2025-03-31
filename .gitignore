@@ -1,0 +1,20 @@
+# Ignore all __pycache__ directories
+**/__pycache__/
+
+# Ignore the config file but keep config.default
+config
+
+# Ignore the bot.db file
+bot.db*
+
+# Ignore the bot.log file
+bot.log
+
+# Ignore screenlog files
+screenlog.*
+
+# Ignore oob downloads
+data/oob_downloads
+
+# Ignore python venv
+venv
